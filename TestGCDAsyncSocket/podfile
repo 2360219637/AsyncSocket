@@ -1,0 +1,4 @@
+platform :ios,’7.0’
+target ‘TestGCDAsyncSocket’ do
+	pod 'CocoaAsyncSocket', '~> 7.5.0'
+end

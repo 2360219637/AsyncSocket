@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B01C64178AB2F918CBA35AF /* libPods-TestGCDAsyncSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 492FCF427CAC775A8816E0A5 /* libPods-TestGCDAsyncSocket.a */; };
+		C6E81C631DBDF8AC003C9E6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E81C621DBDF8AC003C9E6D /* main.m */; };
+		C6E81C661DBDF8AC003C9E6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E81C651DBDF8AC003C9E6D /* AppDelegate.m */; };
+		C6E81C691DBDF8AC003C9E6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E81C681DBDF8AC003C9E6D /* ViewController.m */; };
+		C6E81C6C1DBDF8AC003C9E6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E81C6A1DBDF8AC003C9E6D /* Main.storyboard */; };
+		C6E81C6E1DBDF8AC003C9E6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6E81C6D1DBDF8AC003C9E6D /* Assets.xcassets */; };
+		C6E81C711DBDF8AC003C9E6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E81C6F1DBDF8AC003C9E6D /* LaunchScreen.storyboard */; };
+		C6E81C7C1DBDF8AC003C9E6D /* TestGCDAsyncSocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E81C7B1DBDF8AC003C9E6D /* TestGCDAsyncSocketTests.m */; };
+		C6E81C871DBDF8AC003C9E6D /* TestGCDAsyncSocketUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E81C861DBDF8AC003C9E6D /* TestGCDAsyncSocketUITests.m */; };
+		C6E81C9A1DBDFA33003C9E6D /* RHSocketConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E81C991DBDFA33003C9E6D /* RHSocketConnection.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6E81C781DBDF8AC003C9E6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6E81C561DBDF8AC003C9E6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6E81C5D1DBDF8AC003C9E6D;
+			remoteInfo = TestGCDAsyncSocket;
+		};
+		C6E81C831DBDF8AC003C9E6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6E81C561DBDF8AC003C9E6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6E81C5D1DBDF8AC003C9E6D;
+			remoteInfo = TestGCDAsyncSocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		492FCF427CAC775A8816E0A5 /* libPods-TestGCDAsyncSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestGCDAsyncSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AAEDEA9D15F11154939FCD0 /* Pods-TestGCDAsyncSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGCDAsyncSocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestGCDAsyncSocket/Pods-TestGCDAsyncSocket.debug.xcconfig"; sourceTree = "<group>"; };
+		AECF909D823581DAD4204916 /* Pods-TestGCDAsyncSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGCDAsyncSocket.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestGCDAsyncSocket/Pods-TestGCDAsyncSocket.release.xcconfig"; sourceTree = "<group>"; };
+		C6E81C5E1DBDF8AC003C9E6D /* TestGCDAsyncSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGCDAsyncSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6E81C621DBDF8AC003C9E6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C6E81C641DBDF8AC003C9E6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C6E81C651DBDF8AC003C9E6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C6E81C671DBDF8AC003C9E6D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C6E81C681DBDF8AC003C9E6D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C6E81C6B1DBDF8AC003C9E6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6E81C6D1DBDF8AC003C9E6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6E81C701DBDF8AC003C9E6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6E81C721DBDF8AC003C9E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6E81C771DBDF8AC003C9E6D /* TestGCDAsyncSocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestGCDAsyncSocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6E81C7B1DBDF8AC003C9E6D /* TestGCDAsyncSocketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGCDAsyncSocketTests.m; sourceTree = "<group>"; };
+		C6E81C7D1DBDF8AC003C9E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6E81C821DBDF8AC003C9E6D /* TestGCDAsyncSocketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestGCDAsyncSocketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6E81C861DBDF8AC003C9E6D /* TestGCDAsyncSocketUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGCDAsyncSocketUITests.m; sourceTree = "<group>"; };
+		C6E81C881DBDF8AC003C9E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6E81C941DBDF9E0003C9E6D /* RHSocketConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHSocketConfig.h; sourceTree = "<group>"; };
+		C6E81C981DBDFA33003C9E6D /* RHSocketConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHSocketConnection.h; sourceTree = "<group>"; };
+		C6E81C991DBDFA33003C9E6D /* RHSocketConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHSocketConnection.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6E81C5B1DBDF8AC003C9E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B01C64178AB2F918CBA35AF /* libPods-TestGCDAsyncSocket.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6E81C741DBDF8AC003C9E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6E81C7F1DBDF8AC003C9E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D1A90AFD5436BAB51EE23BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AAEDEA9D15F11154939FCD0 /* Pods-TestGCDAsyncSocket.debug.xcconfig */,
+				AECF909D823581DAD4204916 /* Pods-TestGCDAsyncSocket.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7EA84022532765DF45E979EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				492FCF427CAC775A8816E0A5 /* libPods-TestGCDAsyncSocket.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6E81C551DBDF8AC003C9E6D = {
+			isa = PBXGroup;
+			children = (
+				C6E81C601DBDF8AC003C9E6D /* TestGCDAsyncSocket */,
+				C6E81C7A1DBDF8AC003C9E6D /* TestGCDAsyncSocketTests */,
+				C6E81C851DBDF8AC003C9E6D /* TestGCDAsyncSocketUITests */,
+				C6E81C5F1DBDF8AC003C9E6D /* Products */,
+				0D1A90AFD5436BAB51EE23BD /* Pods */,
+				7EA84022532765DF45E979EA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6E81C5F1DBDF8AC003C9E6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6E81C5E1DBDF8AC003C9E6D /* TestGCDAsyncSocket.app */,
+				C6E81C771DBDF8AC003C9E6D /* TestGCDAsyncSocketTests.xctest */,
+				C6E81C821DBDF8AC003C9E6D /* TestGCDAsyncSocketUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6E81C601DBDF8AC003C9E6D /* TestGCDAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				C6E81C641DBDF8AC003C9E6D /* AppDelegate.h */,
+				C6E81C651DBDF8AC003C9E6D /* AppDelegate.m */,
+				C6E81C671DBDF8AC003C9E6D /* ViewController.h */,
+				C6E81C681DBDF8AC003C9E6D /* ViewController.m */,
+				C6E81C941DBDF9E0003C9E6D /* RHSocketConfig.h */,
+				C6E81C981DBDFA33003C9E6D /* RHSocketConnection.h */,
+				C6E81C991DBDFA33003C9E6D /* RHSocketConnection.m */,
+				C6E81C6A1DBDF8AC003C9E6D /* Main.storyboard */,
+				C6E81C6D1DBDF8AC003C9E6D /* Assets.xcassets */,
+				C6E81C6F1DBDF8AC003C9E6D /* LaunchScreen.storyboard */,
+				C6E81C721DBDF8AC003C9E6D /* Info.plist */,
+				C6E81C611DBDF8AC003C9E6D /* Supporting Files */,
+			);
+			path = TestGCDAsyncSocket;
+			sourceTree = "<group>";
+		};
+		C6E81C611DBDF8AC003C9E6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6E81C621DBDF8AC003C9E6D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6E81C7A1DBDF8AC003C9E6D /* TestGCDAsyncSocketTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6E81C7B1DBDF8AC003C9E6D /* TestGCDAsyncSocketTests.m */,
+				C6E81C7D1DBDF8AC003C9E6D /* Info.plist */,
+			);
+			path = TestGCDAsyncSocketTests;
+			sourceTree = "<group>";
+		};
+		C6E81C851DBDF8AC003C9E6D /* TestGCDAsyncSocketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C6E81C861DBDF8AC003C9E6D /* TestGCDAsyncSocketUITests.m */,
+				C6E81C881DBDF8AC003C9E6D /* Info.plist */,
+			);
+			path = TestGCDAsyncSocketUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6E81C5D1DBDF8AC003C9E6D /* TestGCDAsyncSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6E81C8B1DBDF8AC003C9E6D /* Build configuration list for PBXNativeTarget "TestGCDAsyncSocket" */;
+			buildPhases = (
+				5A332EB368FDFC86089FADC3 /* Check Pods Manifest.lock */,
+				C6E81C5A1DBDF8AC003C9E6D /* Sources */,
+				C6E81C5B1DBDF8AC003C9E6D /* Frameworks */,
+				C6E81C5C1DBDF8AC003C9E6D /* Resources */,
+				891FAE5BC0985E296379F309 /* Embed Pods Frameworks */,
+				F76C919F51A1410DA34DFAE6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestGCDAsyncSocket;
+			productName = TestGCDAsyncSocket;
+			productReference = C6E81C5E1DBDF8AC003C9E6D /* TestGCDAsyncSocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6E81C761DBDF8AC003C9E6D /* TestGCDAsyncSocketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6E81C8E1DBDF8AC003C9E6D /* Build configuration list for PBXNativeTarget "TestGCDAsyncSocketTests" */;
+			buildPhases = (
+				C6E81C731DBDF8AC003C9E6D /* Sources */,
+				C6E81C741DBDF8AC003C9E6D /* Frameworks */,
+				C6E81C751DBDF8AC003C9E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6E81C791DBDF8AC003C9E6D /* PBXTargetDependency */,
+			);
+			name = TestGCDAsyncSocketTests;
+			productName = TestGCDAsyncSocketTests;
+			productReference = C6E81C771DBDF8AC003C9E6D /* TestGCDAsyncSocketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C6E81C811DBDF8AC003C9E6D /* TestGCDAsyncSocketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6E81C911DBDF8AC003C9E6D /* Build configuration list for PBXNativeTarget "TestGCDAsyncSocketUITests" */;
+			buildPhases = (
+				C6E81C7E1DBDF8AC003C9E6D /* Sources */,
+				C6E81C7F1DBDF8AC003C9E6D /* Frameworks */,
+				C6E81C801DBDF8AC003C9E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6E81C841DBDF8AC003C9E6D /* PBXTargetDependency */,
+			);
+			name = TestGCDAsyncSocketUITests;
+			productName = TestGCDAsyncSocketUITests;
+			productReference = C6E81C821DBDF8AC003C9E6D /* TestGCDAsyncSocketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6E81C561DBDF8AC003C9E6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = huaban;
+				TargetAttributes = {
+					C6E81C5D1DBDF8AC003C9E6D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					C6E81C761DBDF8AC003C9E6D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C6E81C5D1DBDF8AC003C9E6D;
+					};
+					C6E81C811DBDF8AC003C9E6D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C6E81C5D1DBDF8AC003C9E6D;
+					};
+				};
+			};
+			buildConfigurationList = C6E81C591DBDF8AC003C9E6D /* Build configuration list for PBXProject "TestGCDAsyncSocket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6E81C551DBDF8AC003C9E6D;
+			productRefGroup = C6E81C5F1DBDF8AC003C9E6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6E81C5D1DBDF8AC003C9E6D /* TestGCDAsyncSocket */,
+				C6E81C761DBDF8AC003C9E6D /* TestGCDAsyncSocketTests */,
+				C6E81C811DBDF8AC003C9E6D /* TestGCDAsyncSocketUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6E81C5C1DBDF8AC003C9E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6E81C711DBDF8AC003C9E6D /* LaunchScreen.storyboard in Resources */,
+				C6E81C6E1DBDF8AC003C9E6D /* Assets.xcassets in Resources */,
+				C6E81C6C1DBDF8AC003C9E6D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6E81C751DBDF8AC003C9E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6E81C801DBDF8AC003C9E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A332EB368FDFC86089FADC3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		891FAE5BC0985E296379F309 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestGCDAsyncSocket/Pods-TestGCDAsyncSocket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F76C919F51A1410DA34DFAE6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestGCDAsyncSocket/Pods-TestGCDAsyncSocket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6E81C5A1DBDF8AC003C9E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6E81C691DBDF8AC003C9E6D /* ViewController.m in Sources */,
+				C6E81C661DBDF8AC003C9E6D /* AppDelegate.m in Sources */,
+				C6E81C9A1DBDFA33003C9E6D /* RHSocketConnection.m in Sources */,
+				C6E81C631DBDF8AC003C9E6D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6E81C731DBDF8AC003C9E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6E81C7C1DBDF8AC003C9E6D /* TestGCDAsyncSocketTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6E81C7E1DBDF8AC003C9E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6E81C871DBDF8AC003C9E6D /* TestGCDAsyncSocketUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6E81C791DBDF8AC003C9E6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6E81C5D1DBDF8AC003C9E6D /* TestGCDAsyncSocket */;
+			targetProxy = C6E81C781DBDF8AC003C9E6D /* PBXContainerItemProxy */;
+		};
+		C6E81C841DBDF8AC003C9E6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6E81C5D1DBDF8AC003C9E6D /* TestGCDAsyncSocket */;
+			targetProxy = C6E81C831DBDF8AC003C9E6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6E81C6A1DBDF8AC003C9E6D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6E81C6B1DBDF8AC003C9E6D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6E81C6F1DBDF8AC003C9E6D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6E81C701DBDF8AC003C9E6D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6E81C891DBDF8AC003C9E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C6E81C8A1DBDF8AC003C9E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6E81C8C1DBDF8AC003C9E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AAEDEA9D15F11154939FCD0 /* Pods-TestGCDAsyncSocket.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestGCDAsyncSocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = come.huaban.TestGCDAsyncSocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C6E81C8D1DBDF8AC003C9E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AECF909D823581DAD4204916 /* Pods-TestGCDAsyncSocket.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestGCDAsyncSocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = come.huaban.TestGCDAsyncSocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C6E81C8F1DBDF8AC003C9E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestGCDAsyncSocketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = come.huaban.TestGCDAsyncSocketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestGCDAsyncSocket.app/TestGCDAsyncSocket";
+			};
+			name = Debug;
+		};
+		C6E81C901DBDF8AC003C9E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestGCDAsyncSocketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = come.huaban.TestGCDAsyncSocketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestGCDAsyncSocket.app/TestGCDAsyncSocket";
+			};
+			name = Release;
+		};
+		C6E81C921DBDF8AC003C9E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestGCDAsyncSocketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = come.huaban.TestGCDAsyncSocketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestGCDAsyncSocket;
+			};
+			name = Debug;
+		};
+		C6E81C931DBDF8AC003C9E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestGCDAsyncSocketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = come.huaban.TestGCDAsyncSocketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestGCDAsyncSocket;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6E81C591DBDF8AC003C9E6D /* Build configuration list for PBXProject "TestGCDAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6E81C891DBDF8AC003C9E6D /* Debug */,
+				C6E81C8A1DBDF8AC003C9E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6E81C8B1DBDF8AC003C9E6D /* Build configuration list for PBXNativeTarget "TestGCDAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6E81C8C1DBDF8AC003C9E6D /* Debug */,
+				C6E81C8D1DBDF8AC003C9E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6E81C8E1DBDF8AC003C9E6D /* Build configuration list for PBXNativeTarget "TestGCDAsyncSocketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6E81C8F1DBDF8AC003C9E6D /* Debug */,
+				C6E81C901DBDF8AC003C9E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6E81C911DBDF8AC003C9E6D /* Build configuration list for PBXNativeTarget "TestGCDAsyncSocketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6E81C921DBDF8AC003C9E6D /* Debug */,
+				C6E81C931DBDF8AC003C9E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6E81C561DBDF8AC003C9E6D /* Project object */;
+}
